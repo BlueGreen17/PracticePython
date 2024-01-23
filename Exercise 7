@@ -1,0 +1,19 @@
+#Let’s say I give you a list saved in a variable: a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100].
+#Write one line of Python that takes this list a and makes a new list that has only the even elements of this list in it.
+
+#I have added some additional functionality like count
+
+a =[1,4,9,16,25,36,49,64,81,100]
+count = 0
+count_odd =0
+even_list = [x for x in a if (x%2)==0] #to print a list of even numbers
+for element in even_list:
+    count +=1
+print(even_list)
+print(count)
+
+odd_list =[y for y in a if (y%2)==1] # to print a list of odd numbers
+for element in odd_list:
+    count_odd +=1
+print(odd_list)
+print(count_odd)
