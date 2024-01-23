@@ -1,0 +1,35 @@
+answer = "yes"
+
+while answer.lower() == "yes":
+    print("Welcome Player 1")
+    player_1 = str(input("Please enter what you want to show (rock/paper/scissor):"))
+    print("Okay, thank you for your input Player 1")
+
+    player_2 = str(input("Please enter what you want to show (rock/paper/scissor):"))
+    print("Okay, thank you for your input Player 2")
+
+    print("Let's see who is the winner")
+    if player_1 == "scissor" and player_2 == "rock":
+        print("Congratulations, Player 2 you won!")
+    elif player_1 == "scissor" and player_2 == "paper":
+        print("Congratulations, Player 1 you won!")
+    elif player_1 == "rock" and player_2 == "scissor":
+        print("Congratulations, Player 1 you won!")
+    elif player_1 == "rock" and player_2 == "paper":
+        print("Congratulations Player 2, you won")
+    elif player_1 == "paper" and player_2 == "scissor":
+        print("Congratulations, Player 2 you won!")
+    elif player_1 == "paper" and player_2 == "rock":
+        print("Congratulations, Player 1 you won!")
+    elif player_1 == "rock" and player_2 == "rock":
+        print("Game is tied as both players inputted rock")
+    elif player_1 == "paper" and player_2 == "paper":
+        print("Game is tied as both players inputted paper")
+    elif player_1 == "scissor" and player_2 == "scissor":
+        print("Game is tied as both players inputted scissor")
+    else:
+        print("Error")
+
+    answer = str(input("Do you want to play again (yes/no)?"))
+
+print("Thank you for playing!")
