@@ -1,0 +1,25 @@
+Exercise 9 was same as Ex 5
+
+#Check Primality Functions
+#Ask the user for a number and determine whether the number is prime or not.
+
+def prime_num(num):
+    if num <2:
+        return False
+    for i in range(2, int(num**0.5)+1):
+        if num % i == 0:
+            return False
+    return True
+
+def main():
+    user_input =  int(input("Enter any number you like:"))
+    if prime_num(user_input):
+        print(f"{user_input} is a prime number")
+    else:
+        print(f"{user_input} is not a prime number")
+
+if __name__ == "__main__":
+    main()
+
+            
+    
